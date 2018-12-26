@@ -1,0 +1,209 @@
+Ural OJ Problem Set 题解
+
+题号 标题 难度系数 算法 
+1000 A+B Problem 10% 直接加 
+1002 Phone Numbers 50% 动态规划或最短路 
+1003 Parity 70% 区间减法 
+1004 Sightseeing trip 60% 最短路 
+1005 Stone Pile 30% 动态规划或搜索 
+1006 Square Frames 35% 模拟 
+1007 Code Words 30% 模拟 
+1008 Image encoding 30% 广度优先搜索 
+1009 K-Based Numbers 20% 递推或枚举（数据规模小） 
+1010 Discrete Function 40% 贪心 
+1011 Conductors 25% 搜索 
+1012 K-Based Numbers 30% 递推 
+1013 K-Based Numbers 33% 递推 
+1014 The Product of Digits 30% 贪心 
+1015 Test the differences 35% 模拟 
+1016 A cube on the walk 50% 搜索或者最短路 
+1017 The Staircases 30% 递推（母函数） 
+1018 The Binary Apple Tree 50% 动态规划 
+1019 A Line painting 40% 离散化处理 
+1020 Rope 45% 一般的计算几何问题 
+1021 Sacrament of the sum 40% 动态规划 
+1022 Genealogical Tree 30% 拓补排序 
+1023 Buttons 50% 动态规划 
+1024 Permutations 25% 置换（和题目名字一样） 
+1025 Democracy in Danger 20% 贪心 
+1026 Questions and Answers 40% 快速排序 
+1027 D++ again 40% 字符串处理 
+1028 Stars 75% 线段树 
+1029 Ministry 55% 动态规划（注意优化） 
+1030 Titanic 60% 计算几何（注意精度！） 
+1031 Railway Tickets 45% 动态规划 
+1032 Find a mutilple 55% 同余问题 
+1033 Labyrinth 30% 搜索、遍历 
+1034 Queens in peaceful positions 35% 搜索 
+1035 Cross-sitich 60% 欧拉路径问题 
+1036 Lucky tickets 50% 递推 
+1037 Memory Management 55% 模拟（注意优化） 
+1038 Spell Checker 45% 字符串的操作及统计 
+1039 Anniversary party 40% 树的动态规划 
+1040 Airline company 55% 搜索 
+1041 Nikifor 85% 线性代数问题
+（过了，但怀疑算法不对） 
+1042 Central Heating 50% 解线性同余方程组 
+1043 Cover an Arc. 58% 计算几何 
+1044 Lucky tickets 40% 递推 
+1045 A funny game 55% 搜索 
+1046 Geometrical dreams 88% 很复杂的计算几何 
+1047 Simple calculations 30% 数学题，解方程吧！ 
+1048 Superlong Sums 48% 高精度加法 
+1049 Brave ballonists 30% 模拟 
+1050 Preparing an article 63% 比较麻烦的字符串处理 
+1051 A simple game on a grid 60% 数学杂题 
+1052 Rabbit Hunt 28% 简单的计算几何 
+1053 Pinocchio 32% 求最大公约数（题目意思不明） 
+1054 Hanoi Tower 50% 数学问题 
+1055 Combinations 40% 数学问题 
+1056 Computer net 55% 动态规划 
+1057 Amount of dergess 53% 数学问题 
+1058 Chocolate 85% 复杂的计算几何问题 
+1059 Expression 20% 简单的打印问题 
+1060 Flip game 35% 我搜索，过了 
+1061 Buffer Manager 45% 模拟 
+1062 Triathlon 83% 复杂的不等式问题 
+1064 Binary Search 48% 搜索 
+1065 Frontier 75% 动态规划 
+1066 Garland 40% 数学问题 
+1067 Disk Tree 45% 模拟或排序 
+1068 Sum 20% 简单的加法题 
+1069 The prufer code 50% 构造 
+1070 A local time 60% 考虑要周全 
+1071 Nikifor - 2 45% 搜索 
+1072 Routing 40% 最短路问题 
+1073 A square problem 50% 动态规划 
+1074 A very short problem 58% 模拟、判断 
+1075 A thread in the space 65% 麻烦的计算几何 
+1076 Trash 50% 二分图的最大权匹配 
+1077 Travelling Tours 60% 图的遍历 
+1078 Segments 40% 动态规划 
+1079 Maxium 50% 数学问题 
+1080 Map coloring 35% 深度优先搜索 
+1081 Binary Lexicographic Sequence 40% 数学问题 
+1082 Gaby Ivanushka 15% 没有算法，直接输出答案 
+1083 Factorials!!! 25% 简单的数学计算 
+1084 A goat in a kitchen garden 35% 简单的计算几何 
+1085 Meeting 55% 最短路 
+1086 Cryptography 45% 数学问题 
+1087 The time to take stones 48% 递推 
+1088 Ilya Murumetz 33% 二叉树的性质 
+1089  verification with a vocabulary 50% 字符串处理 
+1090 In the army now 60% 平衡二叉树 
+1091 Tmutarakan exams 57% 运用容斥原理 
+1092 Transversal 75% 贪心 
+1093 Darts 65% 立体解析几何 
+1094 E-screen 40% 字符串处理 
+1095 Nikifor - 3 45% 同余问题 
+1096 Get the right route plate! 40% 广度优先搜索 
+1097 Square country - 2 63% 离散化处理 
+1098 Questions 48% 字符串处理 
+1099 Work scheduling 60% 图的最大基数匹配 
+ 
+1100 Final Standings 50% 反复统计 
+1101 Robot in the field 30% 表达式求值 
+1102 Strange Dialog 60% 动态规划或语法图 
+1103 Pencils and Circles 65% 不错的几何问题 
+1104 Don\'k ask a woman about her age 55% 同余问题 
+1105 Observer\'s coloring 75% 构造法 
+1106 Two Teams 40% 贪心 
+1107 Warehouse Problem 50% 同余问题 
+1108 Heritage 60% 贪心 
+1109 Conference 40% 二分图的最大基数匹配 
+1110 Power 25% 求幂的余数 
+1111 Squares 60% 计算几何 
+1112 Cover 43% 动态规划 
+1113 Jeep 30% 倒推的方法 
+1114 Boxes 45% 组合数学问题 
+1115 Ships 50% 深度优先搜索 
+1116 Piecewise constant function 40% 模拟 
+1117 Hierarchy 50% 树的性质 
+1118 Nontrivial numbers 40% 搜索 
+1119 Metro 45% 动态规划 
+1120 Sum of sequential numbers 40% 解方程 
+1121 Branches 45% 统计问题 
+1122 Game 40% 我用的搜索 
+1123 Salary 35% 贪心方法 
+1124 Mosaic 50% 一笔画问题 
+1125 Hopscotch 48% 模拟 
+1126 Magnetic storms 55% 哈希排序 
+1127 Colored bricks 35% 简单统计 
+1128 Partition into groups 58% 贪心方法 
+1129 Door painting 45% 贪心方法 
+1130 Nikifor\'s walk 55% 构造法 
+1131 Copying 30% 数学方法 
+1132 Square Root 65% 标准算法！ 
+1133 Fibonacci Sequence 50% 数学计算 
+1134 Cards 45% 模拟 
+1135 Recruits 40% 直接计算 
+1136 Parliament 35% 树的遍历 
+1137 Bus Routes 40% 递归打印 
+1138 Integer Percentage 50% 动态规划 
+1139 City Blocks 47% 离散统计 
+1140 Swamp Incident 45% 贪心 
+1141 RSA Attack 55% 标准算法！ 
+1142 Relation 45% 组合问题。用递推求 
+1143 Electric Path 55% 动态规划 
+1144 The Emperor\'s Riddle 90% 动态规划（？？） 
+1145 Labyrinth 60% 递归 
+1146 Maximum Sum 40% 动态规划 
+1147 Shaping Regions 55% 离散化处理 
+1148 Building Tower 85% 组合数学难题 
+1149 Sinus Dance 30% 简单循环输出 
+1150 Digits 40% 统计+计算 
+1151 Radiobeacons 65% 统计 
+1152 The False Mirrors 40% 深度优先搜索 
+1153 Supercomputer 50% 高精度计算 
+1154 The contest of mega 50% 统计+求最值 
+1155 Troubleduons 55% 贪心 
+1156 Two days 50% 动态规划 
+1157 Young Tiler 45% 搜索就行 
+1158 Censored! 80% 麻烦的递推 
+1159 Fence 65% 计算几何问题 
+1161 Stripies 45% 贪心方法 
+1162 Currency Exchange 55% 最短路算法 
+1163 Chapayev 80% 麻烦的动态规划 
+1164 Fillword 30% 直接统计 
+1165 Subnumber 70% 搜索 
+1167 Bicoloured Horses 50% 动态规划 
+1168 Radio Stations 55% 搜索 
+1169 Pairs 60% 构造问题 
+1170 Desert 65% 计算几何 
+1171 Lost in Space 60% 记忆化搜索 
+1172 Ship Routes 45% 组合计数问题 
+1173 Lasy snail 50% 构造 
+1174 Weird Permutations 35% 构造 
+1175 Strange Sequence 60% hash表/数学方法 
+1176 Hyperchannels 50% 欧拉回路 
+1177 Like Comparisons 60% 动态规划 
+1178 Akbardin’s Roads 45% 计算几何 
+1179 Numbers in Text 50% 简单统计 
+1180 A stone game 40% 归纳 
+1181 Cutting a painted polygon 50% 构造（贪心） 
+1182 Team them up 55% 动态规划 
+1183 Brackets sequence 45% 动态规划 
+1184 Cable master 45% 二分查找 
+1185 Wall 40% 计算几何 
+1186 Chemical reactions 50% 字符串处理 
+1187 Statistical trouble 55% 字符串处理（读懂题目很重要） 
+1188 Library 65% 搜索 
+1189 Pairs of integers 50% 数学问题 
+1190 Chocolate tile 40% 统计与处理 
+1191 Cops and Robbers 40% 模拟 
+1192 Ball in dream 45% 数学问题（简单的等比数列求和） 
+1193 Queue to Exam 50% 统计 
+1194 Handshakes 30% 简单计算 
+1195 Ouths and Crosses 45% 博弈问题 
+1196 History Exam 40% 统计 
+1197 Lonesome knight 35% 简单统计 
+
+1200 Horns and Hoofs 50% 搜索 
+1201 Which day is it? 45% 模拟 
+1202 Rectangles travel 45% 贪心方法 
+1203 Conference 40% 动态规划 
+1204 Idempotents 55% 数学问题 
+1205 Underground 45% 最短路经 
+1206 Sum of digits 35% 数学问题 
+1207 Median 50% 排序 
+1208 Legendary teams contest 45% 搜索 

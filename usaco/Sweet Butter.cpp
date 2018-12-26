@@ -1,0 +1,70 @@
+/*
+ID:xsy19962
+TASK:butter
+LANG:C++
+*/
+#include<stdio.h>
+long n,m,q,s[1010],e[1010][810],d[1010][810],dis[1010][810],queue[100010],f,l,v[1010],ans=1000000000,sum;
+int main()
+{
+    freopen("butter.in","r",stdin);
+    freopen("butter.out","w",stdout);
+    long i,j,k,x,y,z;
+    scanf("%d%d%d",&q,&n,&m);
+    for(;q>=1;q--)
+    {
+        scanf("%d",&k);
+        s[k]++;
+    }
+    for(i=1;i<=m;i++)
+    {
+        scanf("%d%d%d",&x,&y,&z);
+        e[x][0]++;
+        e[x][e[x][0]]=y;
+        d[x][e[x][0]]=z;
+        e[y][0]++;
+        e[y][e[y][0]]=x;
+        d[y][e[y][0]]=z;
+    }
+    for(i=1;i<=n;i++)
+    {
+        f=0;l=1;
+        for(j=1;j<=n;j++)
+            v[j]=0;
+        v[i]=1;
+        queue[1]=i;
+        for(j=1;j<i;j++)
+        {
+            l++;
+            dis[i][j]=dis[j][i];
+            queue[l]=j;
+            v[j]=1;
+        }
+        for(j=i+1;j<=n;j++)
+            dis[i][j]=100000000;
+        dis[i][i]=0;
+        while(f<l)
+        {
+            f++;
+            for(j=1;j<=e[queue[f]][0];j++)
+                if(d[queue[f]][j]+dis[i][queue[f]]<dis[i][e[queue[f]][j]])
+                {
+                    dis[i][e[queue[f]][j]]=d[queue[f]][j]+dis[i][queue[f]];
+                    if(v[e[queue[f]][j]]==0)
+                    {
+                        l++;
+                        queue[l]=e[queue[f]][j];
+                        v[e[queue[f]][j]]=1;
+                    }
+                }
+            v[queue[f]]=0;
+        }
+        sum=0;
+        for(j=1;j<=n;j++)
+            sum+=dis[i][j]*s[j];
+        if(sum<ans)
+            ans=sum;
+    }
+    printf("%d\n",ans);
+    return 0;
+}

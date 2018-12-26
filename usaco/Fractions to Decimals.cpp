@@ -1,0 +1,74 @@
+/*
+ID:xsy19962
+TASK:fracdec
+LANG:C++
+*/
+#include<stdio.h>
+long v[1000001],x,y,z,flag=0;
+char f[1000001];
+int main()
+{
+    freopen("fracdec.in","r",stdin);
+    freopen("fracdec.out","w",stdout);
+    long i,j,k,a[10],q;
+    scanf("%d%d",&x,&y);
+    k=0;
+    z=x/y;
+    x%=y;
+    if(z==0)
+    {
+        k++;
+        a[k]=0;    
+    }
+    while(z!=0)
+    {
+        k++;
+        a[k]=z%10;
+        z/=10;
+    }
+    for(i=1;i<=k;i++)
+        f[i]=a[k-i+1]+'0';
+    k++;
+    f[k]='.';
+    if(x==0)
+    {
+        k++;
+        f[k]='0';
+    }
+    x*=10;
+    v[x]=k;
+    while(x!=0)
+    {
+        
+        k++;
+        f[k]=x/y+'0';
+        x%=y;
+        x*=10;
+        if(v[x]==0)
+            v[x]=k;
+        else
+        {
+            flag=v[x];
+            break;
+        }
+    }/**/
+    q=0;
+    for(i=1;i<=k;i++)
+    {
+        q++;
+        printf("%c",f[i]);
+        if(q%76==0)
+            printf("\n");
+        if(i==flag)
+        {
+            q++;
+            printf("(");
+            if(q%76==0)
+                printf("\n");
+        }
+    }
+    if(flag)
+        printf(")");
+    printf("\n");
+    return 0;
+}

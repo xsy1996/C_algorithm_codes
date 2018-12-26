@@ -1,0 +1,115 @@
+/*
+ID:xsy19962
+TASK:milk3
+LANG:C++
+*/
+#include<stdio.h>
+long queue[4000][2],f,l,v[21][21],ans[22];
+int main()
+{
+    freopen("milk3.in","r",stdin);
+    freopen("milk3.out","w",stdout);
+    long i,j,k,a,b,c,x,y;
+    scanf("%d%d%d",&a,&b,&c);
+    v[0][0]=1;
+    queue[1][0]=0;
+    queue[1][1]=0;
+    f=0;l=1;
+    while(f<l)
+    {
+        f++;
+        if(queue[f][0]==0)
+            ans[c-queue[f][1]]=1;
+        
+      if(queue[f][0]<=b-queue[f][1])
+        {
+            x=0;
+            y=queue[f][0]+queue[f][1];
+        }
+        else
+        {
+            x=queue[f][0]-b+queue[f][1];
+            y=b;
+        }
+        if(v[x][y]==0)
+        {
+            l++;
+            queue[l][0]=x;
+            queue[l][1]=y;
+            v[x][y]=1;
+        }
+        
+        if(a-queue[f][0]<=queue[f][1])
+        {
+            x=a;
+            y=queue[f][1]-a+queue[f][0];
+        }
+        else
+        {
+            x=queue[f][0]+queue[f][1];
+            y=0;
+        }
+        if(v[x][y]==0)
+        {
+            l++;
+            queue[l][0]=x;
+            queue[l][1]=y;
+            v[x][y]=1;
+        }
+        
+        y=queue[f][1];
+        x=0;
+        if(v[x][y]==0)
+        {
+            l++;
+            queue[l][0]=x;
+            queue[l][1]=y;
+            v[x][y]=1;
+        }
+      /******************************************************/
+        if(a-queue[f][0]<=c-queue[f][0]-queue[f][1])
+            x=a;
+        else
+            x=c-queue[f][1];
+        y=queue[f][1];
+        if(v[x][y]==0)
+        {
+            l++;
+            queue[l][0]=x;
+            queue[l][1]=y;
+            v[x][y]=1;
+        }
+        
+        x=queue[f][0];
+        if(b-queue[f][1]<=c-queue[f][0]-queue[f][1])
+            y=b;
+        else
+            y=c-queue[f][0];
+        if(v[x][y]==0)
+        {
+            l++;
+            queue[l][0]=x;
+            queue[l][1]=y;
+            v[x][y]=1;
+        }
+       /***************************************************/
+        y=0;
+        if(v[x][y]==0)
+        {
+            l++;
+            queue[l][0]=x;
+            queue[l][1]=y;
+            v[x][y]=1;
+        }
+    }
+    i=0;
+    while(ans[i]==0 && i<=c)
+        i++;
+    printf("%d",i);
+    i++;
+    for(;i<=c;i++)
+        if(ans[i]==1)
+            printf(" %d",i);
+    printf("\n");
+    return 0;
+}
